@@ -5,6 +5,8 @@ const RouteGuard = ({ authenticated, user, element }) => {
     
     const location = useLocation();
 
+    console.log({ authenticated, user })
+
     if(!authenticated && !location.pathname.includes('/auth')) {
         return <Navigate to='/auth'/>
     }
