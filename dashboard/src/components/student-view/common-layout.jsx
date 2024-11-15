@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 const StudentViewCommonLayout = () => {
   return (
     <div>
-        Common Layout
+        Common Content
         <Outlet/>
     </div>
   )

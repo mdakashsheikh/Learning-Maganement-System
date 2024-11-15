@@ -20,7 +20,7 @@ const App = () => {
                         element={
                             <AuthPage/>
                         }
-                        authenticated={auth?.authenticated}
+                        authenticated={auth?.authenticate}
                         user={auth?.user}
                     />
                 }
@@ -33,7 +33,7 @@ const App = () => {
                         element={
                             <InstructorDashboard/>
                         }
-                        authenticated={auth?.authenticated}
+                        authenticated={auth?.authenticate}
                         user={auth?.user}
                     />
                 }
@@ -46,7 +46,7 @@ const App = () => {
                         element={
                             <StudentViewCommonLayout/>
                         }
-                        authenticated={auth?.authenticated}
+                        authenticated={auth?.authenticate}
                         user={auth?.user}
                     />
                 }
